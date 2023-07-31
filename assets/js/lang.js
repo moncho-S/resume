@@ -16,7 +16,7 @@ var language = {
         "and growing in my current areas of expertise, "+
         "while acquiring new technologies and approaches "+
         "to become even more proficient in my work. ",
-        EducationTitle: "Educaction",
+        EducationTitle: "Education",
         ExperienceTitle: "Professional Experience",
         EdBachelor:
         "<h4>Bachelor of Electronic Engineering</h4>"+
