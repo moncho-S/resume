@@ -245,7 +245,6 @@
               </div>
 
               <div class="my-3">
-                <div class="loading"></div>
                 <div class="sent-message rounded-2">
                   <span class="en">Your message has been sent</span>
                   <span class="es">Su mensaje ha sido enviado</span></div>
@@ -273,7 +272,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/jquery-3.7.0.min.js"></script>
@@ -283,18 +281,15 @@
       $('.sent-message').hide();
       $('.loading').hide();
       $('.es').hide();
-      console.log("oculta esp");
       $('#switch-lang').change(function() {
         var language = $("#switch-lang").val();
         if(language=="es") {
           $('.en').hide();
           $('.es').show();
-          console.log("muestra esp");
         }
         else if (language=="en") {
           $('.es').hide();
           $('.en').show();
-          console.log("muestra en");
         }
         $('.sent-message').hide();
         $('.loading').hide();
