@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -46,18 +45,19 @@
           LinkedIn&ensp;<a href="https://www.linkedin.com/in/sebahernandezg/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
+
 <span style="color: white;">
   <span class="fontBorder">Choose your language:</span>
-  <select class="form-select" aria-label="Default select example">
-    <option selected value="English" onclick="changeLanguage('en')">English</option>
-    <option value="Spanish" onclick="changeLanguage('es')">Spanish</option>
+  <select class="form-select" aria-label="Default select example" id="switch-lang">
+    <option selected value="en">English</option>
+    <option value="es" >Spanish</option>
   </select>
-<br></span>
+</span>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank" ></i> <span id="resumeNav">RESUME</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope" ></i> <span id="contactNav">CONTACT</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank" ></i> <span class="en">RESUME</span><span class="es">CURRICULUM</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope" ></i> <span class="en">CONTACT</span><span class="es">CONTACTO</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -73,8 +73,7 @@
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
-
-        <div class="section-title" id="profileSection">
+        <div class="section-title en">
           <h2 >Profile</h2>
           <p>Electronic engineer with an 
           unwavering passion for software development and automation. 
@@ -92,36 +91,76 @@
           </p>
         </div>
 
+        <div class="section-title es">
+          <h2 >Perfil Profesional</h2>
+          <p>Ingeniero electrónico con un
+            especial interes por el desarrollo de software y la automatización.
+            Si bien tengo pocos años de experiencia profesional,
+            He tenido el privilegio de trabajar en varios roles que 
+            han enriquecido mi conjunto de habilidades y me han 
+            proporcionado una fuerte base en electrónica, programación, y diseño de
+            placas de circuito impreso para diversas aplicaciones.</p>
+            <p> Uno de mis principales objetivos es continuar
+            aprendiendo y especializarme es mis areas de mayor expertiz, mientras
+            utilizo nuevas tecnologias que me hagan mas 
+            productivo en mi trabajo</p>
+        </div>
+
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title" id="EducationTitle">Education</h3>
-            <div class="resume-item" id="EdBachelor">
-              <h4>Bachelor of Electronic Engineering</h4>
-              <h5>2014 - 2019</h5>
-              <p ><em >Arturo Prat University, Iquique, Chile</em></p>
-            </div>
-            
-            <div class="resume-item" id="EdPython">
-              <h4>python fullstack Trainee (462 hours)</h4>
-              <h5>2023</h5>
-              <p><em >Edutecno (Digital talent for Chile), Santiago, Chile</em></p>
-            </div>
-
-              <div class="resume-item" id="skillsSection">
-            <h3 class="resume-title" >Skills and competences</h3>
-                  <li>Microcontrollers programming (Arduino, ESP32, STM32, IoT, etc...)</li>
-                  <li>Python (Django, PyQt)</li>
-                  <li>Programmable logic controller (PLC) in ladder language (Siemens)</li>
-                  <li>Printed circuits boards design (PCB)</li>
-                  <li>Web development (HTML, CSS, Bootstrap, Javascript)</li>
-                  <li>Scrum</li>
-                  <li>Team Work</li>
-                </ul>
+            <span class="en">
+              <h3 class="resume-title" >Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Electronic Engineering</h4>
+                <h5>2014 - 2019</h5>
+                <p ><em >Arturo Prat University, Iquique, Chile</em></p>
               </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title" id="ExperienceTitle">Professional Experience</h3>
-            <div class="resume-item" id="experienceSection1">
+              <div class="resume-item" lang="en">
+                <h4>python fullstack Trainee (462 hours)</h4>
+                <h5>2023</h5>
+                <p><em >Edutecno (Digital talent for Chile), Santiago, Chile</em></p>
+              </div>
+              <div class="resume-item" lang="en">
+                <h3 class="resume-title" >Skills and competences</h3>
+                <li>Microcontrollers programming (Arduino, ESP32, STM32, IoT, etc...)</li>
+                <li>Python (Django, PyQt)</li>
+                <li>Programmable logic controller (PLC) in ladder language (Siemens)</li>
+                <li>Printed circuits boards design (PCB)</li>
+                <li>Web development (HTML, CSS, Bootstrap, Javascript)</li>
+                <li>Scrum</li>
+                <li>Team Work</li>
+              </div>
+            </span>
+          
+
+          <span class="es">
+            <h3 class="resume-title">Educacion</h3>
+            <div class="resume-item">
+              <h4>Ingenieria Civil Electronica</h4>
+              <h5>2014 - 2019</h5>
+              <p ><em >Universidad Arturo Prat, Iquique, Chile</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>python fullstack Trainee (462 horas)</h4>
+              <h5>2023</h5>
+              <p><em >Edutecno (Talento digital para Chile), Santiago, Chile</em></p>
+            </div>
+            <div class="resume-item">
+              <h3 class="resume-title" >Habilidades y competencias</h3>
+              <li>Programacion de microcontroladores (Arduino, ESP32, STM32, IoT, etc...)</li>
+              <li>Python (Django, PyQt)</li>
+              <li>Controladores logicos programables (PLC) en lenguaje ladder (Siemens)</li>
+              <li>Diseño de placas de circuito impreso (PCB)</li>
+              <li>Desarrollo web (HTML, CSS, Bootstrap, Javascript)</li>
+              <li>Scrum</li>
+              <li>Trabajo en equipo</li>
+            </div>
+          </span>
+        </div>
+          <div class="col-lg-6" data-aos="fade-up" >
+            <span class="en">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
               <h4>Programmer Electronic</h4>
               <h5>2021 - Present</h5>
               <p><em>Nayeda Ltda.</em></p>
@@ -129,9 +168,9 @@
                 <li>In charge of automating and connecting to a database a system that needed human interaction</li>
                 <li>Creation of a friendly user interface focused on having the least possible interaction</li>
                 <li>Implementation of continuous improvement to optimize processes in the shortest possible time </li>
-             </ul>
+              </ul>
             </div>
-            <div class="resume-item" id="experienceSection2">
+            <div class="resume-item">
               <h4>Engineering assistant</h4>
               <h5>2020</h5>
               <p><em>Electromining Ltda.</em></p>
@@ -140,65 +179,86 @@
                   three-phase motors to determine their longevity</li>
               </ul>
             </div>
+            </span>
+          
+            <span class="es">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Electronico Programador</h4>
+                <h5>2021 - Presente</h5>
+                <p><em>Nayeda Ltda.</em></p>
+                <ul>
+                  <li>A cargo de automatizar y conectar a una base de datos un sistema que necesitaba la intervencion humana</li>
+                  <li>Creacion de una interfaz grafica de usuario intuitiva enfocada en la menor interaccion posible con el usuario</li>
+                  <li>Implementacion del mejoramiento continuo del sistema al optimizar los procesos internos al menor tiempo posible</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Asistente de Ingenieria</h4>
+                <h5>2020</h5>
+                <p><em>Electromining Ltda.</em></p>
+                <ul>
+                  <li>Diseñador de circuitos electronicos en base a sensores para para bancos de pruebas para motores trifasicos para determinar su durabilidad</li>
+                </ul>
+              </div>
+            </span>
           </div>
         </div>
-
-      </div>
     </section><!-- End Resume Section -->
   
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
       <div class="container">
-
-        <div class="section-title" id="contactSection">
+        <div class="section-title">
+          <span class="en">
           <h2>Contact</h2>
           <p>Please feel free to contact me for ongoing or future projects, 
             discuss potential collaborations, or just a talk, don't hesitate.
             Just fill the form below and I will contact you as soon as posible</p>
+          </span>
+          <span class="es">
+          <h2>Contacto</h2>
+          <p>Sientase libre de contactarme para proyectos actuales o futuros,
+          hablar sobre posibles colaboraciones, etc.
+          Llene el formulario con su informacion de contacto y contestaré tan pronto como pueda</p>
+          </span>
         </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch mx-auto" data-aos="fade-up">
-            <form action="https://formspree.io/f/mqkvarze" method="post" role="form" class="php-email-form rounded">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch mx-auto ">
+            <form action="https://formspree.io/f/mqkvarze" method="post" role="form" id="form" class="php-email-form rounded">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name" id="nameForm">Your Name</label>
+                  <label for="name" ><span class="en">Your Name</span><span class="es">Nombre</span></label>
                   <input type="text" name="name" class="form-control rounded-2" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name" id="emailForm">Your Email</label>
+                  <label for="email" ><span class="en">Your Email</span><span class="es">Correo Electronico</span></label>
                   <input type="email" class="form-control rounded-2" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name" id="subjectForm">Subject</label>
+                <label for="subject" ><span class="en">Subject</span><span class="es">Asunto</span></label>
                 <input type="text" class="form-control rounded-2" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name" id="messageForm">Message</label>
-                <textarea class="form-control rounded-2" name="message" rows="3" required></textarea>
+                <label for="message" ><span class="en">Message</span><span class="es">Mensaje</span></label>
+                <textarea class="form-control rounded-2" name="message" rows="3" required id="message"></textarea>
               </div>
               <div class="my-3">
-                <div class="loading" id="loadingForm">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message rounded-2" id="successMessage">Your message has been sent</div>
+                <div class="sent-message rounded-2" >
+                  <span class="en">Your message has been sent</span>
+                  <span class="es">Su mensaje ha sido enviado</span></div>
               </div>
-              <div class="text-center"><button type="submit" id="buttonForm">Send Message</button></div>
+              <div class="text-center"><button type="submit"><span class="es">Enviar mensaje</span><span class="en">Send message</span></button></div>
             </form>
           </div>
 
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+      </div>
+    </section>
+    <!-- End Contact Section -->
   </div>
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" style="background-color: #4d73e6;" class="d-none d-xl-block">
-    <div class="container">
-      
-    </div>
-  </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -211,11 +271,38 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js" type="text/Javascript"></script>
-  <script src="assets/js/lang.js" type="text/Javascript"></script>
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sent-message').hide();
+      $('.loading').hide();
+      $('.es').hide();
+      console.log("oculta esp");
+      $('#switch-lang').change(function() {
+        var language = $("#switch-lang").val();
+        if(language=="es") {
+          $('.en').hide();
+          $('.es').show();
+          console.log("muestra esp");
+        }
+        else if (language=="en") {
+          $('.es').hide();
+          $('.en').show();
+          console.log("muestra en");
+        }
+        $('.sent-message').hide();
+        $('.loading').hide();
+      })
+      $("form").submit(function(event){
+        event.preventDefault();
+        $('.sent-message').show();
+  });
+      
+  })
+    </script>
 
 </body>
 
